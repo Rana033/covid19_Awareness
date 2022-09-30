@@ -1,0 +1,712 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* header -> section1--> navbar*/
+header {
+    background-image: url(..//image/banner-3-bg.jpg);
+    min-height: 650px;
+}
+
+.logo img,
+footer img {
+    width: 180px;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar button {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    width: 97px;
+
+
+}
+
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+
+}
+
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+
+
+}
+
+
+
+.navbar button:hover {
+    background-color: rgb(211, 66, 13);
+    height: 30px;
+    border-radius: 12px;
+
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6px 80px;
+}
+
+.navlinks .navul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+
+
+
+.drop {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    background-color: azure;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu a:hover {
+    background-color: rgb(239, 88, 23);
+    color: white;
+}
+
+.drop:hover .menu {
+    display: block;
+}
+
+/*header-> section2 -->secondsec*/
+
+.secondsec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding: 120px 80px;
+}
+
+.secondsec h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.secondsec .headp {
+    font-size: 20px;
+    padding: 40px 0px;
+
+}
+
+.headwords {
+    text-align: center;
+}
+
+.secondsec button {
+    height: 60px;
+    width: 170px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(211, 66, 13);
+    border-radius: 12px;
+    border: none;
+}
+
+.secondsec button:hover {
+    background-color: rgba(249, 107, 55, 0.9);
+
+}
+
+.headimg img {
+    position: relative;
+    overflow: hidden;
+    top: 130px
+}
+
+.headimg img:nth-child(1) {
+    position: absolute;
+    right: -120px;
+    top: 270px;
+    overflow: hidden;
+
+
+}
+
+.headimg img:nth-child(2) {
+    position: absolute;
+    right: 240px;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    animation: rotation 12s infinite linear;
+
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.headimg img:nth-child(3) {
+    position: absolute;
+    right: 385px;
+    top: 365px;
+}
+
+/*main-> intro-->counts*/
+main {
+    margin: 0px;
+}
+
+.intro {
+
+    padding: 50px 70px;
+    background-color: rgb(249, 237, 249, .5);
+}
+
+.counts img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.counts .wordicon,
+.numbericon {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.count {
+    display: grid;
+    grid-template-columns: 55px 170px;
+}
+
+.counts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+/* main-> seconddpread*/
+.secondspread {
+    padding: 60px 180px;
+}
+
+.spread,
+.spread ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.spread img {
+    margin-right: 10px;
+}
+
+.spread h1,
+.increasing h1 {
+    font-size: 50px;
+}
+
+.spread h3 {
+    font-size: 28px;
+}
+
+.secondspread p,
+.spread ul li,
+.increasing p {
+    font-size: 18px;
+    color: rgb(168, 164, 164, .95);
+}
+
+.spread li {
+    padding: 6px 0px;
+}
+
+.spread ul li:hover {
+    color: rgb(153, 11, 11);
+    padding: 6px 10px;
+}
+
+.increasing,
+.virusspread {
+    padding: 60px 180px;
+    background-color: rgb(249, 237, 249, .5);
+
+}
+
+.increasing h3 {
+    font-size: 22px;
+}
+
+.increase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.increase2 {
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.increasing ul li {
+    font-size: 18px;
+    list-style: none;
+    padding: 6px 0px;
+
+}
+
+.increasing ul li::before {
+    content: "• ";
+    color: rgb(242, 61, 11);
+    font-size: 18px;
+}
+
+.washing {
+    background-color: white;
+    border-left: solid rgb(180, 15, 15);
+}
+
+.washingcontent {
+    padding: 15px 20px;
+}
+
+/* main -> symtoms section */
+
+.symptoms {
+    text-align: center;
+    padding: 120px 0px;
+}
+
+.symptoms .bigsymptom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+}
+
+.symptoms .wordsymptom,
+.virusspread .viruswords {
+    padding-left: 380px;
+    width: 500px;
+}
+
+.symptoms .wordsymptom h4 {
+
+    font-size: 18px;
+    color: rgb(153, 11, 11);
+    margin: 0px;
+
+}
+
+.symptoms .wordsymptom h1 {
+
+    font-size: 45px;
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+.bigsymptom .wordsymptom p {
+    padding: 0px 65px 0px 65px;
+    font-size: 20px;
+    color: rgb(168, 164, 164, .95);
+
+}
+
+.bigsymptom .smallersymptom2 {
+    position: absolute;
+    right: -60px;
+}
+
+.firstcardsyptom .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    animation: cardsrotate .5s linear;
+    -webkit-filter: grayscale(55%);
+    filter: grayscale(55%);
+    background-color: white;
+}
+
+@keyframes cardsrotate {
+    from {
+        transform: rotate(359deg);
+        background-color: rgb(12, 10, 51);
+    }
+
+    to {
+        transform: rotate(0deg);
+        background-color: white
+    }
+}
+
+.firstcardsyptom .card:hover img {
+    animation: cardssyptomhover .5s linear;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    background-color: rgb(12, 10, 51);
+
+}
+
+@keyframes cardssyptomhover {
+    from {
+        transform: rotate(0deg);
+        background-color: rgb(255, 255, 255);
+    }
+
+    to {
+        transform: rotate(359deg);
+        background-color: rgb(12, 10, 51);
+    }
+}
+
+.firstcardsyptom {
+    margin-left: 200px;
+    display: flex;
+
+
+}
+
+.firstcardsyptom .card {
+    text-align: left;
+    width: 200px;
+    margin: 40px 20px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(206, 203, 203, .3);
+
+
+
+
+}
+
+
+
+
+.firstcardsyptom .card h3 {
+    font-size: 20px;
+}
+
+.firstcardsyptom .card p {
+    font-size: 16px;
+    color: rgb(168, 164, 164, .95);
+}
+
+.preventionCovid {
+    position: relative;
+    margin: 120px 0px;
+}
+
+/* main-> symbtoms --> preventionCovid */
+.preventionCovid .card {
+    position: relative;
+    width: 200px;
+    height: 210px;
+}
+
+.preventionCovid .card img {
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+
+}
+
+.preventionCovid .wordsymptom {
+    padding-left: 420px;
+}
+
+/* main->virusspread */
+.virusspread {
+    text-align: center;
+}
+
+.virusspread .viruswords h1 {
+    font-size: 50px;
+    margin: 0;
+
+}
+
+.virusspread p {
+    font-size: 17px;
+    color: rgb(168, 164, 164, .95);
+}
+
+.virusspread .viruscards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.virusspread .viruscards .card {
+    width: 200px;
+    height: 260px;
+    margin: 40px 20px;
+    border-radius: 12px;
+    padding: 20px;
+
+    background-color: rgb(249, 237, 249, .5);
+    animation: cards 3s linear;
+
+}
+
+@keyframes cards {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: rgb(249, 237, 249, .5);
+    }
+}
+
+.virusspread .viruscards .card:hover {
+    animation: cardsrotatehover 3s linear;
+    background-color: white;
+}
+
+@keyframes cardsrotatehover {
+    from {
+        background-color: rgb(255, 255, 255);
+    }
+
+    to {
+        background-color: rgb(249, 237, 249, .5);
+    }
+}
+
+.virusspread img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+/* main-> questions */
+.questions {
+    padding: 80px 140px;
+}
+
+.questions .qwords {
+    text-align: center;
+}
+
+.questions .qwords h4,
+.questions span {
+    color: rgb(145, 24, 24);
+    padding-right: 10px;
+
+}
+
+.questions .qwords h4 {
+    font-size: 20px;
+
+}
+
+.questions .qwords h1 {
+
+    font-size: 30px;
+}
+
+.questions h3 {
+    font-size: 23px;
+}
+
+.questions .qparts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+
+}
+
+.questions .qparts .ques {
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: rgb(249, 237, 249, .5);
+    margin-bottom: 10px;
+}
+
+.questions .qparts .ques:hover {
+    cursor: pointer;
+}
+
+.questions .qparts .ans {
+    color: rgb(168, 164, 164, .95);
+    font-size: 18px;
+    padding: 20px;
+    display: none;
+}
+
+/* main blog */
+.blogsec {
+    background-color: rgb(249, 237, 249, .5);
+    padding: 70px 150px;
+    text-align: center;
+}
+
+.blogsec .blogwords h4 {
+    color: rgb(145, 24, 24);
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.blogsec .blogwords h1 {
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+.blogcards {
+    display: flex;
+    overflow: hidden;
+}
+
+.blogcards .card {
+    width: 280px;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: left;
+}
+
+
+.blogsec .card img {
+    width: 280px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.blogsec .card .blogimg {
+    position: relative;
+}
+
+.blogcards .card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 13, 48, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 12px;
+
+}
+
+.blogcards .card:hover .overlay {
+    height: 100%;
+}
+
+
+.blogcards .card .blogcardwords {
+    padding: 0px 20px;
+}
+
+.blogcards .card .blogcardwords p {
+    font-size: 17px;
+    color: rgb(168, 164, 164, .95);
+}
+
+.blogcards .card a {
+    text-decoration: none;
+    color: rgba(24, 13, 48, 0.9);
+    font-size: 18px;
+}
+
+.blogbtn {
+
+    transform: translateX(-50%);
+    padding: 20px;
+    margin: 20px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: rgb(168, 164, 164, .95);
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.pre-btn {
+    transform: scaleX(-1);
+}
+
+.blogbtn:hover {
+    background: #efefef;
+}
+
+
+/* footer */
+footer {
+    background-image: url(..//image/banner-3-bg.jpg);
+    color: white;
+    padding: 60px 160px;
+}
+
+footer .information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+footer .information h1 {
+    font-size: 25px;
+    padding-left: 35px;
+
+}
+
+footer .information a {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(215, 211, 211);
+}
+
+footer .information a:hover {
+    padding-left: 5px;
+    color: rgb(145, 24, 24);
+
+}
+
+footer li {
+    list-style-type: none;
+    padding: 5px 0px;
+
+}
+
+.copy {
+    margin: 60px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    border-top: 1px solid rgb(39, 39, 78, .75);
+    text-align: center;
+}
